@@ -4,7 +4,7 @@ var path = require('path');
 app.enable('trust proxy');
 	
 app.get('/',function(req,res){
-	res.render(path.join(__dirname,'public','index.html');
+	res.send(path.join(__dirname,'public','index.html');
 });
 
 app.use(express.static(__dirname + '/public'));
