@@ -7,6 +7,10 @@ app.get('/',function(req,res){
 	res.sendFile(path.join(__dirname,'public','index.html'));
 });
 
+app.post('/api/test',function(req,res){
+	res.send('yoyo');
+});
+
 app.use(express.static(__dirname + '/public'));
 
 
